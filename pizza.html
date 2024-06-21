@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Замовлення піци</title>
+    <link rel="stylesheet" href="pizza.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">PIZZA KMA</div>
+            <div class="contact-info">
+                (044) 222 5 222 | 24 години/ 7 днів на тиждень | Безкоштовна доставка піци
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" data-filter="all" class="active">Усі</a></li>
+            <li><a href="#" data-filter="meat">М'ясні</a></li>
+            <li><a href="#" data-filter="pineapple">З ананасами</a></li>
+            <li><a href="#" data-filter="mushrooms">З грибами</a></li>
+            <li><a href="#" data-filter="seafood">З морепродуктами</a></li>
+            <li><a href="#" data-filter="vega">Вега</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="pizza-list">
+           
+        </section>
+        <aside class="cart">
+            <h2>Замовлення</h2>
+            <ul class="cart-items">
+                <!-- Товари у кошику -->
+            </ul>
+            <div class="cart-total">
+                Сума замовлення: <span id="total-price">0</span> грн
+            </div>
+            <button id="clear-cart">Очистити замовлення</button>
+            <button id="checkout">Замовити</button>
+        </aside>
+    </main>
+    <footer>
+        <div class="discount-banner">Цього тижня на все -20%</div>
+        <div class="footer-info">
+            Pizza KMA - практичний проект в межах курсу JavaScript в Києво-Могилянській Академії. Доставка піци не здійснюється.
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

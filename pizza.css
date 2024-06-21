@@ -1,0 +1,218 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff4e6;
+    margin: 0;
+    padding: 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+header .logo {
+    font-size: 36px;
+    font-weight: bold;
+    background-color: #e67e22;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+header .contact-info {
+    font-size: 14px;
+}
+
+nav {
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #e67e22;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: #e67e22;
+    color: white;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    transform: scale(1.1);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.pizza-list {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pizza-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.pizza-item:hover {
+    transform: scale(1.05);
+}
+
+.pizza-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.pizza-item .label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #e67e22;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.pizza-item .label.new {
+    background-color: red;
+}
+
+.pizza-item .label.popular {
+    background-color: green;
+}
+
+.pizza-item .name {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.pizza-item .description {
+    color: #888;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.pizza-item .sizes {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.pizza-item .btn {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.pizza-item .btn:hover {
+    background-color: #d35400;
+}
+
+aside.cart {
+    flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.cart h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.cart .cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart .cart-total {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.cart button {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cart button:hover {
+    background-color: #d35400;
+}
+
+footer {
+    background-color: #fff4e6;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #888;
+    position: relative;
+}
+
+footer .discount-banner {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-info {
+    margin-top: 40px;
+}
